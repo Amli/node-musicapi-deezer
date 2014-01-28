@@ -1,8 +1,8 @@
 {
-  "name": "node-musicapi-rdio",
+  "name": "node-musicapi-deezer",
   "version": "0.0.1",
-  "description": "Rdio metadata API helper, with an attempt to unify the access to different metadata services",
-  "main": "rdio.js",
+  "description": "Deezer metadata API helper, with an attempt to unify the access to different metadata services",
+  "main": "deezer.js",
   "scripts": {
     "test": "mocha --reporter spec --check-leaks",
     "coverage": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --ui bdd -R spec -t 5000"
@@ -10,7 +10,7 @@
   "keywords": [
     "music",
     "api",
-    "rdio"
+    "deezer"
   ],
   "author": "Emmanuel Magnier",
   "license": "MIT",
