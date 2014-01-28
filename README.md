@@ -1,0 +1,1 @@
+Deezer metadata API helper, with an attempt to unify the access to different metadata services.
