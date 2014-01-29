@@ -26,6 +26,7 @@ describe('Deezer', function() {
         describe("get albums for artist", function() {
             var results;
             before(function(done) {
+                this.timeout(5000);
                 service.getArtistAlbums("27", function(r) {
                     results = r;
                     done();

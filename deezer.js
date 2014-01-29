@@ -78,11 +78,13 @@ Deezer.prototype.get = function deezer_get(type, id, callback) {
 }
 
 Deezer.prototype.getArtistAlbums = function(artistid, callback) {
+    console.log(baseurl + "/artist/" + artistid + "/albums");
     request(baseurl + "/artist/" + artistid + "/albums", function(error, response, body) {
         var answer = JSON.parse(body),
             availableAlbums = answer.data.map(function(item) {
                 return parse("album", item);
             });
+        console.log(body);
         callback(availableAlbums, artistid);
     });
 };
